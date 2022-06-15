@@ -8,11 +8,8 @@
   "Categories": [
     "Containerization"
   ],
-  "source_repo": "https://github.com/operator-playground-io/nginx-app.git",
   "cover": "cover.md",
-  "use_explorer_dataset": false,
-  "use_catalog_dataset": "",
-  "is_s3_type": false,
+  "platform": "Kubernetes",
   "meta": {
     "Install Time": [
       "5 minutes"
@@ -28,6 +25,15 @@
     ],
     "Contact": []
   },
+  "deployment_information": {
+    "Deployment Namespace": "nginx-app"
+  },
+  "commands": [
+    {
+      "description": "Check if namespace nginx-app is created",
+      "exec": "kubectl get ns"
+    }
+  ],
   "display": [
     {
       "name": "Developer Dashboard",
