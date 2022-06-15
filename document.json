@@ -1,14 +1,14 @@
 {
   "name": "Nginx Container App",
   "description": "An application with a  simple web page hosted on Nginx.",
-  "logo": "_images/nginx.png",
+  "logo": "_images/nginx-logo.png",
   "has_supporting_content": true,
   "stack_id": "Nginx_Container_App-course_1655192668676",
   "type": "Course",
   "Categories": [
     "Containerization"
   ],
-  "source_repo": "",
+  "source_repo": "https://github.com/operator-playground-io/nginx-app.git",
   "cover": "cover.md",
   "use_explorer_dataset": false,
   "use_catalog_dataset": "",
