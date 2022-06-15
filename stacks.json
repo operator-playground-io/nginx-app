@@ -1,7 +1,7 @@
 {
   "title": "Nginx Container App",
   "description": "An application with a  simple web page hosted on Nginx.",
-  "logo": "_images/nginx.png",
+  "logo": "_images/nginx-logo.png",
   "enabled": true,
   "category_label": [
     "Course"
