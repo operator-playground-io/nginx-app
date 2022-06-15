@@ -1,0 +1,24 @@
+{
+  "title": "Nginx Container App",
+  "description": "An application with a  simple web page hosted on Nginx.",
+  "logo": "_images/nginx.png",
+  "enabled": true,
+  "category_label": [
+    "Course"
+  ],
+  "document": "",
+  "stack_id": "Nginx_Container_App-course_1655192668676",
+  "de_catalog_id": "Nginx_Container_App-course_1655192668676",
+  "type": "Course",
+  "categories": [
+    "Containerization"
+  ],
+  "tag": [],
+  "has_api": false,
+  "has_dataset": false,
+  "is_certified": false,
+  "has_support": false,
+  "git_url": "",
+  "git_commit": "",
+  "installTime": "5 minutes"
+}

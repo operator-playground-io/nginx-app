@@ -1,0 +1,1 @@
+Using this tutorial, setup a simple application on Nginx 

@@ -1,0 +1,28 @@
+{
+  "name": "Nginx application",
+  "appLayout": "accordion",
+  "appTheme": "g90",
+  "footer": "footer.md",
+  "tutorials": [
+    {
+      "description": "Follow the steps to create pre-deploy configuration and deploy the nginx pod on Kubernetes",
+      "duration": "5 mins",
+      "title": "Setup Nginx application",
+      "tutorial_name": "Setup-Nginx-application.md"
+    }
+  ],
+  "usefulLinks": [
+    {
+      "description": "",
+      "url": "",
+      "title": ""
+    }
+  ],
+  "demos": [
+    {
+      "description": "",
+      "url": "",
+      "title": ""
+    }
+  ]
+}
