@@ -19,11 +19,7 @@
     ],
     "Categories": [
       "Containerization"
-    ],
-    "Catalog Id": [
-      "Nginx_Container_App-course_1655192668676"
-    ],
-    "Contact": []
+    ]
   },
   "deployment_information": {
     "Deployment Namespace": "nginx-app"
