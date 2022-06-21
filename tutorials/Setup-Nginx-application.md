@@ -93,16 +93,10 @@ spec:
 EOF
 ```
 
-Create the  application
+Create the  application and service
 
 ```execute
 kubectl create -f nginxapp.yaml -n nginx-app
-```
-
-Create the service
-
-```execute
-kubectl expose pod starterkit-nginx --port=8080 --name nginxsvc --type=NodePort -n nginx-app
 ```
 
 ### 4 - Verify the setup is complete
