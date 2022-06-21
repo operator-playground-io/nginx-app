@@ -109,3 +109,17 @@ Check the URL in the browser
 Follow the URL: http://##SSH.host##:30100 
 
 We have completed the setup of the application.
+
+### 5 - Cleanup the setup
+
+```execute
+kubectl delete pod starterkit-nginx -n nginx-app
+kubectl delete service nginxsvc -n nginx-app
+kubectl delete configmap indexconfigmap -n nginx-app
+```
+
+Wait for a few minutes for the above to be deleted, then delete the namespace
+
+```execute
+kubectl delete namespace nginx-app
+```
