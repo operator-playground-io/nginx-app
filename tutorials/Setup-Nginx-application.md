@@ -1,3 +1,11 @@
+
+### Create the pre-requisite directory
+
+```execute
+mkdir -p /home/student/code-server/nginx-application
+cd /home/student/code-server/nginx-application
+```
+
 ### 1 - Create the namespace
 
 ```execute
@@ -44,6 +52,22 @@ Create the yaml file to deploy the service and nginx.
 cat <<EOF>nginxapp.yaml
 ---
 apiVersion: v1
+kind: Service
+metadata:
+  name: nginxsvc
+  labels:
+    app: nginx
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    name: http
+    nodePort: 30100
+  selector:
+    app: nginx
+---
+apiVersion: v1
 kind: Pod
 metadata:
   name: starterkit-nginx
@@ -88,8 +112,6 @@ kubectl get svc,pod,configmap -n nginx-app
 ```
 
 Check the URL in the browser
+Follow the URL: http://##SSH.host##:30100 
 
-```execute
-echo "http://$(hostname -I | cut -d' ' -f2):$(kubectl get service nginxsvc -n nginx-app -o custom-columns=:spec.ports[0].nodePort | tail -1)"
-```
-We have completed the setup of the application for which we want to create an Operator. The remaining steps explain how to use the StarterKit to create an Operator from this setup.
+We have completed the setup of the application.
